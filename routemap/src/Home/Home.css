@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=VT323&family=Work+Sans:wght@500&display=swap');
+
+
+.body{
+    background-color: #F4F8FA;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.home{
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F8FA;
+}
+
+.heading{
+    color: #1B31A8;
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.locations{
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.render-map-box{
+    height: 50vh;
+    width: 50vw;
+    margin: 5%;
+}
+
+.location-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 40vw;
+}
+
+.location-inputs{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center; */
+    gap: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    
+}
+.location-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+ 
+}
+
+.origin{
+    width: 100%;
+}
+
+label{
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-size: 12px;
+    padding-left: 0.2rem;
+    padding-bottom: 0.2rem;
+
+}
+
+input{
+    background-color: white;
+    border: 1px solid #DCDDEC;
+    height: 45px;
+    border-radius: 6px;
+    margin-bottom: 5%;
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    padding-left: 5%;
+    box-sizing: border-box;
+    width: 13rem;
+}
+
+.waypoints{
+    position: relative;
+}
+
+
+
+.display-waypoints{
+    
+    color: #1B31A8;
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+}
+
+.waypoint-btn{
+    /* position: absolute;
+    right: 0; */
+    background-color: #f4f8fa;
+    border: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.calc-btn{
+    background: #1B31A8;
+    border-radius: 32px;
+    color: white;
+    border: #1B31A8 1px solid;
+    padding: 1rem 1.5rem;
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    /* margin: 10%; */
+    margin-right: 3rem;
+}
+
+.distance{
+    border-radius: 8px;
+    border: #DCDDEC 1px solid;
+    margin-left: 3rem;
+    margin-right: 3rem;
+
+}
+
+.distance-number{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: white;
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    padding: 1% 5%;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.distance-style-number{
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: #0079FF;
+    font-size: 20px
+
+}
+
+.distance-text{
+    font-size: 12px;
+    font-family: 'VT323', monospace;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1% 5%;
+}
+
+@media (max-width: 767px) {
+}
+   
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (max-width: 955px) {
+
+    
+
+    .heading{
+        margin-top: 35%;
+        display: none;
+    }
+
+    input{
+        width: 100% !important;
+    }
+
+    .home{
+        /* margin-top: 30%; */
+        height: 100vh;
+    }
+    .render-map-box{
+        height: 50vh;
+        width: 95vw;
+        margin: 5%;
+        margin-top: 20rem;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .locations{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8%;
+        width: 100%;
+    }
+
+    .location-container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 5%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .location-inputs{
+        width: 100%;
+    }
+
+    .distance{
+        width: 70vw;
+    }
+
+    .display-waypoints{
+        font-size: 14px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+@media (max-width: 320px) {
+
+    .heading{   
+        display: none;
+    }
+    .content-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
